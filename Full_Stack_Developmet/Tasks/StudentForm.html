@@ -1,62 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Hello, World!</title>
+    <meta charset="UTF-8">
+    <title>Student Form</title>
 </head>
 
 <body>
-    <h1 class="title">Student Registration Form</h1>
-    <div>
-        <label>Name : </label>
-        <input type="text">
+    <h1>Student Registration Form</h1>
+    <form>
+        <div>
+        <label for="name">Name : </label>
+        <input id="name" type="text" name="username" value="" placeholder="Enter you name" required>
     </div>
+    <br>
     <div>
-        <label>Email : </label>
-        <input type="email">
+        <label for="email">Email : </label>
+        <input id="email" type="email" name="email" value="" placeholder="Enter your email address" required>
     </div>
+    <br>
     <div>
-        <label>Password : </label>
-        <input type="password">
+        <label for="password">Password : </label>
+        <input id="password" type="password" name="password" value="" placeholder="Enter your password" required="">
     </div>
+    <br>
     <div>
-        <label>Age : </label>
-        <input type="number">
+        <label for="age">Age : </label>
+        <input id="age" type="number" name="age" min="1" max="100" required>
     </div>
+    <br>
     <div>
-        <label>DOB : </label>
-        <input type="date">
+        <label for="dob">DOB : </label>
+        <input id="dob" type="date" name="dob" required>
     </div>
+    <br>
     <div>
-        <label>Phone : </label>
-        <input type="tel">
+        <label for="phone">Phone : </label>
+        <input id="phone" type="tel" name="phone" placeholder="Enter your phone number" required>
     </div>
+    <br>
     <div>
-        <label>Gender : </label>
-        <input type="radio">M
-        <input type="radio">F
+        <p>Gender</p>
+        <input id="male" type="radio" name="gender" value="male"><label for="male">M</label>
+        <input id="female" type="radio" name="gender" value="female"><label for="female">F</label>
     </div>
+    <br>
     <div>
-        <label>Skills : </label>
-        <input type="checkbox"> java
-        <input type="checkbox"> HTML
-        <input type="checkbox"> CSS
+        <p>Skills</p>
+        <input type="checkbox" id="java" name="skills" value="java"> <label for="java">Java</label>
+        <input type="checkbox" id="html" name="skills" value="html"> <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="css"> <label for="css">CSS</label>
     </div>
+    <br>
     <div>
-        <lable>Branch : </lable>
-        <select>
-            <option>IT</option>
-            <option>CSE</option>
-            <option>AIDS</option>
-            <option>MECH</option>
+        <lable for="brach">Branch : </lable>
+        <select id="branch" name="branch" required>
+            <option value="it">IT</option>
+            <option value="cse">CSE</option>
+            <option value="aids">AIDS</option>
+            <option value="mech">MECH</option>
         </select>
     </div>
+    <br>
     <div>
-        <label>photo upload : </label>
-        <input type="file">
+        <label for="file">photo upload : </label>
+        <input id="file" type="file">
     </div>
+    <br>
     <input type="submit">
     <input type="reset">
+    </form>
 </body>
 
 </html>
